@@ -1,0 +1,43 @@
+site_name: TMS Toolbox
+site_description: "A collection of utilities and toy models to experiment with superposition."
+
+repo_name: Globe-NLP-Lab/tms-toolbox
+repo_url: https://github.com/Globe-NLP-Lab/tms-toolbox
+
+theme:
+  icon:
+    repo: fontawesome/brands/github
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      primary: teal
+      accent: grey
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: "Switch to dark mode"
+    - media: "(prefers-color-scheme: dark)"
+      primary: teal
+      accent: white
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: "Switch to light mode"
+
+plugins:
+  - search
+  - mkdocstrings
+
+markdown_extensions:
+  - pymdownx.highlight
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Usage: usage.md
+  # - API Reference:
+  #   - "tms_toolbox": api/tms_toolbox.md
+  #   - "tms_toolbox.models": api/tms_toolbox.models.md
+  #   - "tms_toolbox.utils": api/tms_toolbox.utils.md
+  - Changelog: changelog.md
